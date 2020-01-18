@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @SpringBootApplication
 public class DemoApplication {
 	@GetMapping("/tmdb")
-    public String greetingForm(Model model) {
+    public String tmdbForm(Model model) {
       model.addAttribute("tmdb", new tmdb());
       return "tmdb";
     }
