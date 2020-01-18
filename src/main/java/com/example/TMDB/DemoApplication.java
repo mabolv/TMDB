@@ -25,7 +25,7 @@ public class DemoApplication {
       return "tmdb";
     }
     @PostMapping("/tmdb")
-public String tmdbSubmit(@ModelAttribute tmdb tmdb) {
+    public String tmdbSubmit(@ModelAttribute tmdb tmdb) {
       System.out.println("id: " + tmdb.getId() + ", content: " + tmdb.getContent());
       return "result";
     }
@@ -39,7 +39,7 @@ public String tmdbSubmit(@ModelAttribute tmdb tmdb) {
       return "Hello World!";
     }
 	public static void main(String[] args) throws Exception {
-		//SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(DemoApplication.class, args);
 
 		
 		//URL url = new URL("http://api.themoviedb.org/3/movie/550?api_key=f1ee1ec938670ab34a48c865b0700437");
